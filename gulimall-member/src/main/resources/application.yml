@@ -1,0 +1,28 @@
+#端口
+server:
+  port: 8001
+
+#数据库配置
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://47.98.41.5:3306/gulimall_ums?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  #nacos配置
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+  #应用配置
+  application:
+    name: gulimall-member
+
+#mybatis-plus配置
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
