@@ -6,15 +6,18 @@ server:
 spring:
   datasource:
     username: root
-    password: 123456
+    password: Ljw138.011@
     url: jdbc:mysql://47.98.41.5:3306/gulimall_sms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
+
 
 #nacos配置
   cloud:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+#      config:
+#        server-addr: 127.0.0.1:8848
 
 #应用配置
   application:
@@ -27,3 +30,7 @@ mybatis-plus:
     db-config:
       id-type: auto
 
+#coupon:
+#  user:
+#    name: ccc
+#    age: 20
